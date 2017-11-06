@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="97e44dab-f227-4e28-95f2-deed9ddbf0b4" name="UMLUseCaseDiagramLibMath" linkedPackageId="a30d22c8-8540-4bde-b451-846bc851d720" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="0689d35f-c193-4046-bbfd-e75839d66d79">
+      <elementDefinition Id="2d0917c0-86af-40ec-8c32-53bc06dac7e3" />
+      <body>La bibliothèque fournis des outils mathèmatique aux utilisateurs.</body>
+      <annotatedElements>
+        <subsystemMoniker Id="b1bfe42e-bd08-44bf-864b-7a142f1c3910" LastKnownName="LibMath" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d1d4c682-38be-4d48-936b-77cd8725e3ca" name="Developpeur" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ae774f5-3fbb-48d8-a287-fb7c32df8682" />
+        <targetEnds>
+          <association Id="7b037f1e-c760-4276-8573-48908c4ec46e" isDerived="false" sourceEndRoleName="Developpeur" targetEndRoleName="LibMath" isLeaf="false" name="Utilise" isAbstract="false">
+            <subsystemMoniker Id="b1bfe42e-bd08-44bf-864b-7a142f1c3910" LastKnownName="LibMath" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f78968c-b1ee-473e-be73-efb871edf299" name="Developpeur" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="311e6d8d-2436-40af-b50e-12b714d94c02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a7c9f84-16d7-4a97-aad0-88e53f2ba630" name="LibMath" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="436911f5-085e-4ce1-ad7f-ce2b2da0c303" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bc957afd-38d7-4da3-8623-224cf328eacf" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2bad39b4-d076-4732-b93e-bf4bd80a7f22" name="Construire" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d25bf8c5-e278-4c1c-8497-83607b97ca6b" />
+        <subjects>
+          <subsystemMoniker Id="b1bfe42e-bd08-44bf-864b-7a142f1c3910" LastKnownName="LibMath" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="689d4321-dc6c-40a9-a28a-6249d8a372dc" name="Enrichir" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0baefdd5-000f-4062-91bb-6ff72c5f7485" />
+        <subjects>
+          <subsystemMoniker Id="b1bfe42e-bd08-44bf-864b-7a142f1c3910" LastKnownName="LibMath" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d24387ef-c309-42a7-b08b-560865275bcd" name="Afficher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dfff5170-6ff9-4957-bbc5-6732b142ea4d" />
+        <subjects>
+          <subsystemMoniker Id="b1bfe42e-bd08-44bf-864b-7a142f1c3910" LastKnownName="LibMath" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="b1bfe42e-bd08-44bf-864b-7a142f1c3910" name="LibMath" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="450bce1e-35c0-4be0-8443-78bf4b08c138" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="a30d22c8-8540-4bde-b451-846bc851d720" name="UMLLib">
+    <elementDefinition Id="bfb0f127-1783-44fa-94bb-287149a153ea" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fd4b2843-1548-43b3-aae1-76a493f23896">
+        <profileInstance Id="ac6304f2-afc0-4715-b78f-a9dffecc623b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ec8f9032-ff7c-435e-9867-a647c8ffcc38">
+        <profileInstance Id="2f35f47f-1ab7-4780-968b-90c3c411dc36" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

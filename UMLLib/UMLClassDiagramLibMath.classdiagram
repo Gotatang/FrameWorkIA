@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="11d16c68-fdd4-41a4-8071-a9401a5b27ef" name="UMLClassDiagramLibMath" linkedPackageId="b4cb7db6-9658-4e2a-907d-f22a765fa3f5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="388e5574-52f2-4b0e-862c-68d3d61bf26f" name="LibMath">
+        <elementDefinition Id="6f1b8197-98f8-47bd-a7dd-8deef733bea4" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="b6110169-3705-4236-a9ab-8711ad007c1b" name="Point2" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cade1022-1dba-446d-84f1-3f9906189a81" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="a07435ae-1356-4e6b-ab6d-3243a0146834" name="Vector2" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cf8c2c28-7f4c-4fce-850d-f59339d293e8" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="93fab003-bb98-4d7f-9201-44c76e58dd78" name="Point3" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="befabd67-7347-4f24-9a66-46564b8e5db6" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7e16f16f-35ae-4f4d-a44e-9469b9ef18b0" name="Vector3" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="22310f70-5fca-4a5f-952e-4a52ece58ae7" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="92ca259f-e689-486e-b7a8-d020d31f59a1" name="Vector4" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8b2a087e-69ba-4aed-9fdd-85baaf55f0a4" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="4556263d-8bb4-481a-82f8-bb4b5849218f" name="Vector" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f5e0dc74-6d9f-4824-aef7-615ac7fa20e6" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f4d1a8f2-13c4-449b-ae67-83e654da7d57" name="Triangle2" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="158adc5c-4d50-4905-8b75-a8d58de56482" />
+              <targetEnds>
+                <association Id="a75bee0e-7d8f-4baa-976c-a21a21003426" isDerived="false" sourceEndRoleName="Triangle2" targetEndRoleName="Point2" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="b6110169-3705-4236-a9ab-8711ad007c1b" LastKnownName="Point2" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="71e42fe3-d54b-491b-b070-1d0c5c894001" name="Triangle2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="a76070fc-b22a-4a34-af4a-778decebd978" name="Lower" value="3">
+                            <elementDefinition Id="e2cbf1f8-2613-4937-b2a0-c6558e80d949" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="53adf45c-8ce4-4bf0-8f9b-e598c2740193" name="Upper" value="3">
+                            <elementDefinition Id="57efc41d-eaf6-43ce-9335-02976e92fb74" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="c6ef5710-5f91-4317-b8b2-7055997d431a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e1c3cd04-8a8f-4753-b0d9-064605e0f8c9" name="Point2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="80ffd9db-3aeb-4076-9d66-3c9d5b227e42" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="355b8640-fdf1-446b-a59e-9e648ffb556b" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="848b2fd0-0bf7-4f0b-abe1-375d8081da5d" name="Triangle3" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="dc1fc9b7-eb92-4fc7-88b7-9cd702ce914c" />
+              <targetEnds>
+                <association Id="832df08c-a2b2-4de5-bf29-8ea9df636c81" isDerived="false" sourceEndRoleName="Triangle3" targetEndRoleName="Point3" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="93fab003-bb98-4d7f-9201-44c76e58dd78" LastKnownName="Point3" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="4ce94e50-9080-4ca0-a31c-b0e4c5a94efa" name="Triangle3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="db8e1dca-609c-4adb-88f3-a537255a94e1" name="Lower" value="3">
+                            <elementDefinition Id="ffb64bdc-c36d-439d-a183-b2a58dd3706c" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="2e681665-ede8-403d-93af-1b72f37a1c3b" name="Upper" value="3">
+                            <elementDefinition Id="c2325972-1b3e-4cda-82a4-794c3421f430" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="6aa89300-5af2-42f4-9983-4fec8f0092f0" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e6dc3653-368b-4dc6-9aca-f14604e22e8d" name="Point3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="da6c25c2-d29a-4909-928d-cbc03e525bc5" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="f9f54db7-2c2b-464d-94b3-16b719ef667c" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="39808405-5943-46cd-a538-befef8564f8d" name="Matrix22" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e54e55b1-22b7-4577-a317-c76feedbb0e6" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="81adbc1c-5ded-4e3b-9e85-b16af336fa56" name="Matrix33" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0a48c3f0-6088-4fd8-b36f-14c02eaf5def" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c851c9ae-9c79-4a71-973a-3b4cbc4dd0d8" name="Matrix44" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="850d8d16-2400-4241-92e5-24b65c450a4a" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2e97036a-5d0b-4b24-9b28-d3b3ee525252" name="Transform" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fa7dc9b2-3a27-4cec-9790-3ca08121c27f" />
+              <targetEnds>
+                <association Id="0eec5e93-bf81-4682-b51e-8d06513a0b56" isDerived="false" sourceEndRoleName="Transform" targetEndRoleName="Matrix33" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="81adbc1c-5ded-4e3b-9e85-b16af336fa56" LastKnownName="Matrix33" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="c50fc390-10ed-4f49-94fb-3a0dd41d52e1" name="Transform" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="76d588b6-887c-4fd2-b735-106dd0420645" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="27bfe9cb-a516-4e71-88e0-765d6d986d95" name="Matrix33" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="493a04e4-5529-480c-acea-2bc037b6557b" name="Lower" value="0-1">
+                            <elementDefinition Id="e6b912e9-6d49-4c3e-95d9-0f2a6153b604" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="14a8c5f4-b264-431c-b4c6-36b6b7ba6e21" name="Upper" value="0-1">
+                            <elementDefinition Id="a740be5d-d334-4af2-9f79-cbbad88bed0a" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="13f0a8a1-ceec-4e25-a06e-17c88cd5d4af" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="267b4449-23e2-469d-b4c1-b0a212d94cf7" />
+                </association>
+                <association Id="b51ddffd-93c1-4ca2-bb73-47e8c1d7668f" isDerived="false" sourceEndRoleName="Transform" targetEndRoleName="Vector3" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="7e16f16f-35ae-4f4d-a44e-9469b9ef18b0" LastKnownName="Vector3" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d144eea8-9e84-47ed-b2d3-0caaf808e74f" name="Transform" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="2d3e72e1-3e3b-480c-b6a3-da42d2f090ab" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="87525595-2b92-4530-b90d-99cb55f92947" name="Vector3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="c4c729f7-f8fb-4f42-b88d-dab80f13e552" name="Lower" value="0-2">
+                            <elementDefinition Id="66f91d3c-d2e2-4081-aa30-bb3f2a906036" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="3e84144e-7cec-4888-a059-a4b68e2724a3" name="Upper" value="0-2">
+                            <elementDefinition Id="0bab5f2e-8aa7-4a28-b656-ebde2470e247" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="5360bca2-f1f0-4748-9ad2-dd67e8fbbd68" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d875f5ce-78e8-407f-a100-f1862e974026" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="735172f5-10a9-464c-b596-87fa0c14dca2" name="Shape" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="99e3951a-13d6-42c3-8d18-34a9d4a06c24" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="91ba2ed1-80d9-4ff8-88ac-599ce112f6b0" name="Shape2D" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c8bea521-615f-4d57-a50a-9a7422562f3b" />
+              <generalsInternal>
+                <generalization Id="ea81fc86-905a-4066-9d98-4e6a1b93d074" isSubstitutable="false">
+                  <classMoniker Id="735172f5-10a9-464c-b596-87fa0c14dca2" LastKnownName="Shape" />
+                  <elementDefinition Id="ead6adad-9b48-469d-aa03-bcdbfd794d43" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="3024e405-148a-4dfa-97f6-88f8f952cf7b" isDerived="false" sourceEndRoleName="Shape2D" targetEndRoleName="Point2" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="b6110169-3705-4236-a9ab-8711ad007c1b" LastKnownName="Point2" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="28686ece-b1d3-4d86-b82b-d0b4aa9be85a" name="Shape2D" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="368a9596-c61a-4ebd-beed-ecfe61b54732" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="d5dd9f86-40eb-44a2-9c17-f6604dbbacea" name="Point2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="e2d1cfb9-9ac8-4a73-8e7d-f6bd244a8a35" name="Lower" value="2">
+                            <elementDefinition Id="8a41ff83-af8d-4af6-a3ce-bda1883e96bb" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="0a4ce65f-c9c3-4c7f-aff1-86026baf8ffe" name="Upper" value="2">
+                            <elementDefinition Id="16de32ba-7dc1-4874-92da-a63e95da0a46" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="f814dfcf-7b74-4650-acc6-6584b862c930" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="9b7a51c8-0b97-417b-bf78-3904af55b1c1" />
+                </association>
+                <association Id="b22c8f3b-f084-4f7d-9854-9d3e554f9223" isDerived="false" sourceEndRoleName="Shape2D" targetEndRoleName="Vector2" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="a07435ae-1356-4e6b-ab6d-3243a0146834" LastKnownName="Vector2" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="49af4edc-f4cf-4d88-b6ba-172643b6d0b9" name="Shape2D" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="ecde6a10-62bb-4e29-9148-0b2de3b0afb0" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="a8d45ce6-956f-43f3-a202-ffb5fc6ba1e9" name="Vector2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="d8dc22f4-6275-4059-ba67-0f58eddc0bcd" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="c0cbc8ac-45a9-405c-8fe0-830b5bccd733" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="970cd75f-d7bd-44c2-a7e5-6c7ff26c6fc4" name="Rectangle" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e0758f85-12cc-4738-ade7-bb4b51176a42" />
+              <generalsInternal>
+                <generalization Id="c40c50c7-47d8-4bfa-a9a0-661257bc3f9e" isSubstitutable="false">
+                  <classMoniker Id="91ba2ed1-80d9-4ff8-88ac-599ce112f6b0" LastKnownName="Shape2D" />
+                  <elementDefinition Id="a1a689df-b5a7-4a7d-a5ec-6eb40620ca81" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2baa3f98-a27d-4fcf-8bb2-1c90cc13116c" name="Shape3D" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="12b3d8a4-17ca-48c6-8dd6-c30fb7e0940c" />
+              <generalsInternal>
+                <generalization Id="55b42ced-6f4f-4f0d-8a57-5113d0ec0f50" isSubstitutable="false">
+                  <classMoniker Id="735172f5-10a9-464c-b596-87fa0c14dca2" LastKnownName="Shape" />
+                  <elementDefinition Id="d8fad716-9456-48aa-ba61-e53c1d264204" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="a97a7281-7907-4394-8833-b2c76c6268a2" isDerived="false" sourceEndRoleName="Shape3D" targetEndRoleName="Point3" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="93fab003-bb98-4d7f-9201-44c76e58dd78" LastKnownName="Point3" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2fd3d0f8-9ef1-46eb-b0b7-23e18d19eed4" name="Shape3D" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="31119f2d-627d-44d2-9e1e-eb33ff88d067" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="ad78c799-6421-46e1-ac94-f7b895c2c32a" name="Point3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="214bb5ac-2955-458d-b148-535dd78fad1f" name="Lower" value="2">
+                            <elementDefinition Id="c1c4bd24-a24b-4c83-a982-ebd37c5f119b" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="ab0c1f10-c640-47bc-a779-7aedb9897817" name="Upper" value="2">
+                            <elementDefinition Id="6c08878d-407a-4f0f-a7d5-a3bf9ffa4c84" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="39eae7fd-18c1-400f-9798-d357aabb0179" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="6c8556ac-7413-485c-8a35-265a3d834ba5" />
+                </association>
+                <association Id="f7ad52b3-c33d-4ff7-bb9b-7ddbf5290d4c" isDerived="false" sourceEndRoleName="Shape3D" targetEndRoleName="Vector3" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="7e16f16f-35ae-4f4d-a44e-9469b9ef18b0" LastKnownName="Vector3" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1edbcf49-eedc-470e-910f-1443ab2eff6e" name="Shape3D" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="ea69b8a7-feae-493b-b086-9112d3dfe58b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="65f4748b-885d-497f-82ff-26df91629b26" name="Vector3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="5c475402-438c-4fd7-9262-0bb3a34ed236" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="af518888-ea5f-4495-a04e-8353ca9685a0" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="dba79dd5-726e-431f-b2fe-c2bf57248d6c" name="Polygon2" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d2f57437-2a3b-4927-82ca-7edd0d165ef0" />
+              <generalsInternal>
+                <generalization Id="4be73308-e4d8-4486-ad5f-3d0d9b122526" isSubstitutable="false">
+                  <classMoniker Id="91ba2ed1-80d9-4ff8-88ac-599ce112f6b0" LastKnownName="Shape2D" />
+                  <elementDefinition Id="1a36f1b9-e510-4fa9-ad9c-e22af70a2a00" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="5a8cb069-9639-4e6a-91e6-5ecbb50f9357" isDerived="false" sourceEndRoleName="Polygon2" targetEndRoleName="Point2" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="b6110169-3705-4236-a9ab-8711ad007c1b" LastKnownName="Point2" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2853c0a2-7c2b-46d8-a6e0-a3042755e272" name="Polygon2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="dc11984d-3dc9-4182-b84e-facb4a74f72d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="92c3895e-89c0-463a-a898-1c473cac23d5" name="Point2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="c667e475-2743-4b0b-b31c-f6f22742d848" name="Lower" value="1 - n">
+                            <elementDefinition Id="ea0989a9-288a-4d1a-b727-701e8091dc8e" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="dfc9990a-d217-4b59-b7a1-15bdafdc88a3" name="Upper" value="1 - n">
+                            <elementDefinition Id="b94d1ed3-10c6-4397-9720-50d5c298a355" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="6c0e88f1-4e9e-401c-a733-a4aeb425e58a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="3eb3ea07-c067-4d3e-b83a-7b463c9753b7" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="50212457-9240-406d-a7ad-e68e426767e1" name="Box" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6deaf6ea-7ff9-4d73-bcf5-30b1d2632d43" />
+              <generalsInternal>
+                <generalization Id="5e2f6506-44de-4c30-8b51-ebff19bdb005" isSubstitutable="false">
+                  <classMoniker Id="2baa3f98-a27d-4fcf-8bb2-1c90cc13116c" LastKnownName="Shape3D" />
+                  <elementDefinition Id="b95ca85f-ca41-45eb-8f93-2c0c6d2c0526" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="c1def17f-9281-43f4-9472-30d89e216910" name="Sphere" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f6369530-d5e5-4d95-a2d4-ecb43982dfb2" />
+              <generalsInternal>
+                <generalization Id="800270b8-36f8-4609-9d38-610d6269f5d8" isSubstitutable="false">
+                  <classMoniker Id="2baa3f98-a27d-4fcf-8bb2-1c90cc13116c" LastKnownName="Shape3D" />
+                  <elementDefinition Id="85f98d19-d458-4de1-af6e-2fc4dc7a3d85" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3e902f6c-40f9-4011-ba80-0fec46421b00" name="Polygon3" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ce93ba83-1aeb-4439-93c1-b37fd594122f" />
+              <generalsInternal>
+                <generalization Id="a52e14a1-82fa-488a-955a-7b5b88f7b2d8" isSubstitutable="false">
+                  <classMoniker Id="2baa3f98-a27d-4fcf-8bb2-1c90cc13116c" LastKnownName="Shape3D" />
+                  <elementDefinition Id="5dcd6bb5-5d27-4fea-a8df-30b4fce06156" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="9e733d30-dc97-4506-85b4-29279a579151" isDerived="false" sourceEndRoleName="Polygon3" targetEndRoleName="Point3" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="93fab003-bb98-4d7f-9201-44c76e58dd78" LastKnownName="Point3" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="355531f5-c85e-4d1f-84ea-a58b5cb103da" name="Polygon3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="4d9200fb-61f5-4f0c-91e7-11327505742d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b7fed0e9-b99a-4e5b-a461-42a8c2135f30" name="Point3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="0ad331ba-87ca-4c53-9738-a7223b03175e" name="Lower" value="1-n">
+                            <elementDefinition Id="af9eb12a-fac6-4738-9093-38fdc7714139" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="344751a3-d0a3-48c5-ac14-9192f975e771" name="Upper" value="1-n">
+                            <elementDefinition Id="f63e36a2-9ea6-4741-b8e9-b7fde860ebf1" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="3492b75f-d321-4aa6-bb98-2f2cd9ff205a" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="8538dfab-4e0a-43e6-a296-2c74122b30f6" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="9bfff849-db4a-4ff5-953f-8a2c89c7bbed" name="Circle" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="a00808a4-d2b9-462d-9808-06cc490fbd56" />
+              <generalsInternal>
+                <generalization Id="d0448afb-469a-429c-a96f-7f90623d2173" isSubstitutable="false">
+                  <classMoniker Id="91ba2ed1-80d9-4ff8-88ac-599ce112f6b0" LastKnownName="Shape2D" />
+                  <elementDefinition Id="e9bb00b4-06c0-40c0-b5dd-54afba77cd1e" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="b4cb7db6-9658-4e2a-907d-f22a765fa3f5" name="UMLLib">
+    <elementDefinition Id="bfb0f127-1783-44fa-94bb-287149a153ea" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fe8affbe-b103-41dc-aff2-1d7ad732071c">
+        <profileInstance Id="026386d1-ad0e-47cd-90ae-a58fe4c9ea31" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d6eb83df-aaa6-4e11-84ff-6f84a0250ef0">
+        <profileInstance Id="584d6eb3-6cbb-48e8-86bc-c63101c3dffb" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
